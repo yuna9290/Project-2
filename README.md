@@ -76,17 +76,17 @@ R Shiny를 이용하여 사용자가 자기부담금과 보상한도를
 
 ## Methods
 
-| Method / Model | Description | Application |
+| Method / Model | Description |
 |---|---|---|
-| Q-Q Plot | 손해액 자료와 이론적 분위수의 선형성을 이용한 분포 적합도 검토 | Part 1, 2, 3 |
-| Lognormal | 로그 변환한 손해액이 정규분포를 따른다고 가정 | Part 1, 2, 3 |
-| Pareto | 오른쪽 꼬리가 긴 손해액 분포를 표현하는 모형 | Part 1, 2, 3 |
-| Weibull | 손해액의 비대칭적 분포를 표현하는 모형 | Part 1, 2 |
-| Frechet | 역와이블(Inverse Weibull) 분포로 오른쪽 꼬리가 긴 손해액 자료에 적용 | Part 1, 2, 3 |
-| Log-logistic | 로그 변환된 손해액의 Logistic 구조를 이용한 분포 | Part 1, 2, 3 |
-| MLE | 절단자료에서 모수 및 미관측 사고건수를 추정 | Part 1 |
-| Numerical Integration | 평균 사고심도 및 보험금의 기대값 계산 | Part 1, 2, 3 |
-| Monte Carlo Simulation | 난수를 이용하여 기대 보험금을 수치적으로 추정 | Part 1, 2, 3 |
+| Q-Q Plot | 손해액 자료와 이론적 분위수의 선형성을 이용한 분포 적합도 검토 |
+| Lognormal | 로그 변환한 손해액이 정규분포를 따른다고 가정 |
+| Pareto | 오른쪽 꼬리가 긴 손해액 분포를 표현하는 모형 |
+| Weibull | 손해액의 비대칭적 분포를 표현하는 모형 |
+| Frechet | 역와이블(Inverse Weibull) 분포로 오른쪽 꼬리가 긴 손해액 자료에 적용 |
+| Log-logistic | 로그 변환된 손해액의 Logistic 구조를 이용한 분포 |
+| MLE | 절단자료에서 모수 및 미관측 사고건수를 추정 |
+| Numerical Integration | 평균 사고심도 및 보험금의 기대값 계산 |
+| Monte Carlo Simulation | 난수를 이용하여 기대 보험금을 수치적으로 추정 |
 
 
 ## Data

@@ -78,11 +78,11 @@ R Shiny를 이용하여 사용자가 자기부담금과 보상한도를
 
 | Model / Method | Description | Formula |
 |---|---|---|
-| Lognormal | 로그 변환된 손해액이 정규분포를 따른다고 가정 | $\log X \sim N(\mu,\sigma^2)$ |
-| Pareto | 오른쪽 꼬리가 긴 손해액 분포를 표현하는 모형 | $F(x)=1-\left(\frac{\lambda}{\lambda+x}\right)^\alpha$ |
-| Weibull | 손해액의 비대칭적 분포를 표현하는 모형 | $F(x)=1-\exp\left[-\left(\frac{x}{\lambda}\right)^\alpha\right]$ |
-| Frechet | 역와이블(Inverse Weibull) 분포로 오른쪽 꼬리가 긴 손해액 자료에 적용 | $F(x)=\exp\left[-\left(\frac{\lambda}{x}\right)^\alpha\right]$ |
-| Log-logistic | 로그 변환된 손해액의 Logistic 구조를 이용한 분포 | $F(x)=\frac{1}{1+\left(\frac{\lambda}{x}\right)^\alpha}$ |
+| Lognormal | 로그 변환한 손해액과 정규분포 분위수의 선형관계를 이용 | $\ln X_{(r)}=\mu+\sigma\Phi^{-1}(p_r)$ |
+| Pareto | 변환된 손해액과 $-\ln(1-p)$의 선형관계를 이용 | $\ln\left(1+\frac{X_{(r)}}{\lambda}\right)=\frac{1}{\alpha}[-\ln(1-p_r)]$ |
+| Weibull | 로그 변환한 손해액과 $\ln[-\ln(1-p)]$의 선형관계를 이용 | $\ln X_{(r)}=\mu+\sigma\ln[-\ln(1-p_r)]$ |
+| Frechet (Inverse Weibull) | 로그 변환한 손해액과 $-\ln[-\ln(p)]$의 선형관계를 이용 | $\ln X_{(r)}=\mu-\sigma\ln[-\ln(p_r)]$ |
+| Log-logistic | 로그 변환한 손해액과 Logistic 분위수의 선형관계를 이용 | $\ln X_{(r)}=\mu+\sigma\ln\left(\frac{p_r}{1-p_r}\right)$ |
 
 
 ## Data

@@ -1,5 +1,5 @@
 # ============================================================
-# Insurance Premium Lab v2
+# Insurance Premium Lab
 # Part 1: 상해보험 + Part 3: 학교화재보험
 #
 # 배포용 구조:
